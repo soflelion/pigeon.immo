@@ -26,3 +26,5 @@ Icon
 *.log
 
 /out
+
+.vercel

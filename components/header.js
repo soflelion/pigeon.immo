@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-
+import Image from 'next/image'
 import HamburgerMenu from './hamburger-menu'
 
 const links = [
@@ -15,8 +15,8 @@ export default () => (
     <div className='navbar__container'>
 
       <Link href='/'>
-        <a className='nav__link'>
-          <img className='nav__logo' src='/static/images/logos/cadastre.data.gouv.fr.svg' alt='Page d’accueil de cadastre.data.gouv.fr' />
+        <a>
+          <img className='nav__logo' src='/static/images/logos/bird.png' height={38} width={'auto'} alt='Page d’accueil de pigeon.immo' />
         </a>
       </Link>
 
@@ -51,6 +51,12 @@ export default () => (
 
       .nav__logo {
         height: 38px;
+      }
+
+      .nav__title{
+      line-height: 100%;
+      font-size:26px;
+      color:green;
       }
 
       @media (max-width: 800px) {
