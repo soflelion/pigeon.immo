@@ -6,11 +6,11 @@ import {contenanceToSurface} from '../../lib/surfaces'
 const ParcelleSumup = ({prefixe, section, numero, contenance}) => (
   <div className='sumup-container'>
     <div>
-      <span className='title'>Parcelle </span>
+      <span className='title'>Parcelle ID</span>
       <span>{(prefixe === '000') ? '' : prefixe} {section} {numero}</span>
     </div>
     {contenance && <div>
-      <span className='title'>Contenance </span>
+      <span className='title'>Contenance Taille</span>
       <span>{contenanceToSurface(contenance)}</span>
     </div>}
     <style jsx>{`
